@@ -1,9 +1,12 @@
 package br.com.fiap.a2tina_android_recyclerview;
 
 import android.content.Context;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -39,6 +42,12 @@ public class ContatoAdapater extends RecyclerView.Adapter<ContatoAdapater.Contat
     }
 
     public static class ContatoViewHolder extends RecyclerView.ViewHolder {
+
+        CardView cardView;
+        ImageView imgContato;
+        TextView txtNome;
+        TextView txtStatus;
+
         public ContatoViewHolder(View itemView) {
             super(itemView);
         }
