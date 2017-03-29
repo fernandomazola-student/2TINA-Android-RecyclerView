@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -38,10 +39,16 @@ public class ContatoAdapater extends RecyclerView.Adapter<ContatoAdapater.Contat
     @Override
     public void onBindViewHolder(ContatoViewHolder holder, int position) {
     //Para cada item que tem na lista, e coloco no viewholder // Pegar os dados do contatos que vamos receber
-        Contato contato = this.contatos.get(position);
+        final Contato contato = this.contatos.get(position);
         holder.imgContato.setImageResource(contato.getImagem());
         holder.txtNome.setText(contato.getNome());
         holder.txtStatus.setText(contato.getStatus());
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Clicou em" + contato.getNome(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
