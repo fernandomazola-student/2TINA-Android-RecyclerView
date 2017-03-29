@@ -31,7 +31,7 @@ public class ContatoAdapater extends RecyclerView.Adapter<ContatoAdapater.Contat
         View v = LayoutInflater.from(this.context).inflate(R.layout.recyclerview_contato, parent, false);
         ContatoViewHolder contatoViewHolder = new ContatoViewHolder(v);
 
-        return null;
+        return contatoViewHolder;
 
     }
 
