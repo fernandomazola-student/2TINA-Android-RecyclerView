@@ -22,14 +22,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtNome"
-            android:layout_alignRight="@id/imgContato"
+            android:layout_toRightOf="@id/imgContato"
             android:layout_alignTop="@id/imgContato"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@id/imgContato"
+            android:layout_toRightOf="@id/imgContato"
             android:layout_alignBottom="@id/imgContato"
             android:id="@+id/txtStatus"/>
 
